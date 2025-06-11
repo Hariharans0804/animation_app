@@ -1,12 +1,137 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import { StyleSheet, Text, TouchableWithoutFeedback, View } from 'react-native'
+import React, { useState } from 'react'
 import { Colors } from '../../constants'
+import { CustomCheckBox } from '../../components'
 
 const HomeScreen = () => {
 
+    const [checked, setChecked] = useState(false);
+
+    const [checked1, setChecked1] = useState(false);
+    const [checked2, setChecked2] = useState(false);
+    const [checked3, setChecked3] = useState(false);
+    const [checked4, setChecked4] = useState(false);
+
+    const handleCheckBoxPress = () => {
+        setChecked(!checked);
+    }
+
     return (
         <View style={styles.container}>
-            <Text>Home Screen</Text>
+            <Text style={[styles.text, styles.marginBottom]}>Custom Check Box</Text>
+            <TouchableWithoutFeedback
+                onPress={() => {
+                    handleCheckBoxPress();
+                }}
+            >
+                <View style={styles.checkBox}>
+                    <CustomCheckBox
+                        checked={checked}
+                        width={50}
+                        height={50}
+                        checkMarkColor={'white'}
+                        checkedBorderColor={'#FFA901'}
+                        unCheckedBorderColor={'#D9D9D9'}
+                        checkedBackgroundColor={'#FFA901'}
+                        unCheckedBackgroundColor={'white'}
+                    />
+                </View>
+            </TouchableWithoutFeedback>
+            <TouchableWithoutFeedback
+                onPress={() => {
+                    handleCheckBoxPress();
+                }}
+            >
+                <View style={styles.checkBox}>
+                    <CustomCheckBox
+                        checked={checked}
+                        width={50}
+                        height={50}
+                        checkMarkColor={'white'}
+                        checkedBorderColor={'#378BA4'}
+                        unCheckedBorderColor={'#81BECE'}
+                        checkedBackgroundColor={'#378BA4'}
+                        unCheckedBackgroundColor={'#E8EDE7'}
+                    />
+                </View>
+            </TouchableWithoutFeedback>
+
+            <TouchableWithoutFeedback
+                onPress={() => {
+                    // handleCheckBoxPress();
+                    setChecked1(!checked1);
+                }}
+            >
+                <View style={styles.checkBox}>
+                    <CustomCheckBox
+                        checked={checked1}
+                        width={50}
+                        height={50}
+                        checkMarkColor={'white'}
+                        checkedBorderColor={'#FFA901'}
+                        unCheckedBorderColor={'#D9D9D9'}
+                        checkedBackgroundColor={'#FFA901'}
+                        unCheckedBackgroundColor={'white'}
+                    />
+                </View>
+            </TouchableWithoutFeedback>
+            <TouchableWithoutFeedback
+                onPress={() => {
+                    // handleCheckBoxPress();
+                    setChecked2(!checked2);
+                }}
+            >
+                <View style={styles.checkBox}>
+                    <CustomCheckBox
+                        checked={checked2}
+                        width={50}
+                        height={50}
+                        checkMarkColor={'white'}
+                        checkedBorderColor={'#378BA4'}
+                        unCheckedBorderColor={'#81BECE'}
+                        checkedBackgroundColor={'#378BA4'}
+                        unCheckedBackgroundColor={'#E8EDE7'}
+                    />
+                </View>
+            </TouchableWithoutFeedback>
+            <TouchableWithoutFeedback
+                onPress={() => {
+                    // handleCheckBoxPress();
+                    setChecked3(!checked3);
+                }}
+            >
+                <View style={styles.checkBox}>
+                    <CustomCheckBox
+                        checked={checked3}
+                        width={50}
+                        height={50}
+                        checkMarkColor={'white'}
+                        checkedBorderColor={'#107980'}
+                        unCheckedBorderColor={'#76A1A7'}
+                        checkedBackgroundColor={'#107980'}
+                        unCheckedBackgroundColor={'#EDE1CF'}
+                    />
+                </View>
+            </TouchableWithoutFeedback>
+            <TouchableWithoutFeedback
+                onPress={() => {
+                    // handleCheckBoxPress();
+                    setChecked4(!checked4);
+                }}
+            >
+                <View style={styles.checkBox}>
+                    <CustomCheckBox
+                        checked={checked4}
+                        width={50}
+                        height={50}
+                        checkMarkColor={'white'}
+                        checkedBorderColor={'#796EA8'}
+                        unCheckedBorderColor={'#A6A9C8'}
+                        checkedBackgroundColor={'#796EA8'}
+                        unCheckedBackgroundColor={'#D3D9E9'}
+                    />
+                </View>
+            </TouchableWithoutFeedback>
         </View>
     )
 }
@@ -16,8 +141,17 @@ export default HomeScreen
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: Colors.DEFAULT_WHITE,
+        justifyContent: 'center',
         alignItems: 'center',
-        justifyContent: 'center'
+        backgroundColor: Colors.DEFAULT_WHITE,
+    },
+    text: {
+        color: Colors.DEFAULT_BLACK,
+    },
+    marginBottom: {
+        marginBottom: 10,
+    },
+    checkBox: {
+        marginBottom: 10,
     }
 })

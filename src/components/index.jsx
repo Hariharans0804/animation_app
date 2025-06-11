@@ -22,6 +22,10 @@ import RenderItem from "./animatiedDonutChat/RenderItem";
 import DonutChart from "./animatiedDonutChat/DonutChart";
 import DonutPath from "./animatiedDonutChat/DonutPath";
 
+//Check Box Components
+import CustomCheckBox from "./checkBoxComponents/CustomCheckBox";
+import AnimatedCheckMarkPath from "./checkBoxComponents/AnimatedCheckMarkPath";
+import AnimatedColor from "./checkBoxComponents/AnimatedColor";
 
 
 export {
@@ -48,5 +52,10 @@ export {
     RenderItem,
     DonutChart,
     DonutPath,
+
+    //Check Box Components
+    CustomCheckBox,
+    AnimatedColor,
+    AnimatedCheckMarkPath,
 
 };
