@@ -27,6 +27,14 @@ import CustomCheckBox from "./checkBoxComponents/CustomCheckBox";
 import AnimatedCheckMarkPath from "./checkBoxComponents/AnimatedCheckMarkPath";
 import AnimatedColor from "./checkBoxComponents/AnimatedColor";
 
+//Switch Button Components
+import CustomSwitch from "./switchButtonComponents/CustomSwitch";
+
+//Bar Chart Components
+import BarPath from "./barChartComponents/BarPath";
+import XAxisText from "./barChartComponents/XAxisText";
+import AnimatedText from "./barChartComponents/AnimatedText";
+
 
 export {
     // Drawer Components
@@ -58,4 +66,11 @@ export {
     AnimatedColor,
     AnimatedCheckMarkPath,
 
+    //Switch Button Components
+    CustomSwitch,
+
+    //Bar Chart Components
+    BarPath,
+    XAxisText,
+    AnimatedText,
 };

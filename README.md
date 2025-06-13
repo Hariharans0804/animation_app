@@ -113,3 +113,6 @@ npm install @react-navigation/stack
 
 <!-- Progress Bar Chat -->
 npm install @shopify/react-native-skia
+
+<!-- Bar Chart -->
+npm i d3

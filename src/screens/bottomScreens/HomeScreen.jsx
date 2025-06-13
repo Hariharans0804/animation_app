@@ -1,7 +1,7 @@
 import { StyleSheet, Text, TouchableWithoutFeedback, View } from 'react-native'
 import React, { useState } from 'react'
-import { Colors } from '../../constants'
-import { CustomCheckBox } from '../../components'
+import { Colors, Fonts } from '../../constants'
+import { CustomCheckBox, CustomSwitch } from '../../components'
 
 const HomeScreen = () => {
 
@@ -132,6 +132,20 @@ const HomeScreen = () => {
                     />
                 </View>
             </TouchableWithoutFeedback>
+
+            <Text style={[styles.text, styles.marginBottom]}>Custom Switch Button</Text>
+            <View style={styles.switchContainer}>
+                <CustomSwitch activeColor={'#FFA901'} inActiveColor={'#F2F5F7'} />
+            </View>
+            <View style={styles.switchContainer}>
+                <CustomSwitch activeColor={'#92d7ef'} inActiveColor={'#F2F5F7'} />
+            </View>
+            <View style={styles.switchContainer}>
+                <CustomSwitch activeColor={'#e3e5b3'} inActiveColor={'#F2F5F7'} />
+            </View>
+            <View style={styles.switchContainer}>
+                <CustomSwitch activeColor={'#107980'} inActiveColor={'#F2F5F7'} />
+            </View>
         </View>
     )
 }
@@ -146,6 +160,8 @@ const styles = StyleSheet.create({
         backgroundColor: Colors.DEFAULT_WHITE,
     },
     text: {
+        fontSize: 20,
+        fontFamily: Fonts.POPPINS_SEMI_BOLD,
         color: Colors.DEFAULT_BLACK,
     },
     marginBottom: {
@@ -153,5 +169,8 @@ const styles = StyleSheet.create({
     },
     checkBox: {
         marginBottom: 10,
-    }
+    },
+    switchContainer: {
+        marginVertical: 10,
+    },
 })

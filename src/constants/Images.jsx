@@ -19,4 +19,7 @@ export default {
     FOLDERICON: require('../assets/images/floatingActionButtonImages/FolderIcon.png'),
     PENICON: require('../assets/images/floatingActionButtonImages/PenIcon.png'),
     PLUSICON: require('../assets/images/floatingActionButtonImages/PlusIcon.png'),
+
+    //Bar Chart Animation Images
+    RUN: require('../assets/images/floatingActionButtonImages/Run.png'),
 }
