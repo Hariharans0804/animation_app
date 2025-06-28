@@ -22,4 +22,16 @@ export default {
 
     //Bar Chart Animation Images
     RUN: require('../assets/images/floatingActionButtonImages/Run.png'),
+
+    //Custom Carousel Images
+    // PRODUCT_1: require('../assets/images/customCarouselImages/image-product-1.jpg'),
+    // PRODUCT_2: require('../assets/images/customCarouselImages/image-product-2.jpg'),
+    // PRODUCT_3: require('../assets/images/customCarouselImages/image-product-3.jpg'),
+    // PRODUCT_4: require('../assets/images/customCarouselImages/image-product-4.jpg'),
+    // PRODUCT_LANDSCAPE_1: require('../assets/images/customCarouselImages/image-product-1-landscape.jpg'),
+    // PRODUCT_LANDSCAPE_2: require('../assets/images/customCarouselImages/image-product-2-landscape.jpg'),
+    // PRODUCT_LANDSCAPE_3: require('../assets/images/customCarouselImages/image-product-3-landscape.jpg'),
+    // PRODUCT_LANDSCAPE_4: require('../assets/images/customCarouselImages/image-product-4-landscape.jpg'),
+
+
 }

@@ -3,6 +3,7 @@ import React from 'react'
 import { createStackNavigator, TransitionPresets } from '@react-navigation/stack'
 import { Calls, Chat, Contacts, MyProfile, SavedMessage, Settings } from '../screens/drawerScreens';
 import BottomTabNavigator from './BottomTabNavigator';
+import { ImageCarouselScreen } from '../screens/singleScreens';
 
 
 const RootNavigator = () => {
@@ -20,7 +21,7 @@ const RootNavigator = () => {
             <Stack.Screen name='Calls' component={Calls} />
             <Stack.Screen name='SavedMessage' component={SavedMessage} />
             <Stack.Screen name='Settings' component={BottomTabNavigator} />
-            {/* <Stack.Screen name='HomeTab' component={BottomTabNavigator} /> */}
+            <Stack.Screen name='ImageCarousel' component={ImageCarouselScreen} />
         </Stack.Navigator>
     )
 }

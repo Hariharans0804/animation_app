@@ -35,6 +35,12 @@ import BarPath from "./barChartComponents/BarPath";
 import XAxisText from "./barChartComponents/XAxisText";
 import AnimatedText from "./barChartComponents/AnimatedText";
 
+//Custom Image Carousel Components
+import CustomImageCarousal from "./customImageCarousel/CustomImageCarousal";
+import Pagination from "./customImageCarousel/Pagination";
+import Dot from "./customImageCarousel/Dot";
+import CustomImage from "./customImageCarousel/CustomImage";
+
 
 export {
     // Drawer Components
@@ -73,4 +79,10 @@ export {
     BarPath,
     XAxisText,
     AnimatedText,
+
+    //Custom Image Carousel Components
+    CustomImageCarousal,
+    Pagination,
+    Dot,
+    CustomImage,
 };

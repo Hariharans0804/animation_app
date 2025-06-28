@@ -6,7 +6,7 @@ import { profileImages } from '../../data/data';
 import { Drawer, Header, Overlay } from '../../components';
 
 
-const Chat = () => {
+const Chat = ({ navigation }) => {
 
   const [chatList, setChatList] = useState([
     { id: 1, name: "Hari", email: "hari@gmail.com" },
@@ -71,7 +71,7 @@ const Chat = () => {
           <Text style={styles.text}>{item.email}</Text>
         </View>
         <View style={styles.column3}>
-          <TouchableOpacity style={styles.button}>
+          <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('ImageCarousel')}>
             <Text style={styles.buttonText}>Show Me</Text>
           </TouchableOpacity>
         </View>
