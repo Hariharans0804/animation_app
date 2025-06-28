@@ -1,6 +1,6 @@
 import { Platform, SafeAreaView, StatusBar, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import { CustomImageCarousal, CustomImageCarouselLandscape, CustomImageCarouselSquare } from '../../components';
+import { CustomImageCarousal } from '../../components';
 import { Colors } from '../../constants';
 
 const ImageCarouselScreen = () => {
