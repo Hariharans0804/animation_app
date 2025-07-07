@@ -8,6 +8,10 @@ import Overlay from "./drawerComponents/Overlay";
 import CustomBottomTab from "./bottomTabComponents/CustomBottomTab";
 import BottomTabIcon from "./bottomTabComponents/BottomTabIcon";
 
+// Bottom Tab Components - 2
+import CustomBottomTab_2 from "./bottomTabComponents_2/CustomBottomTab_2";
+import ItemList_2 from "./bottomTabComponents_2/ItemList_2";
+
 // Floating Active Button Components
 import FirstTypeFloatingButton from "./floatingButtonComponents/FirstTypeFloatingButton";
 import SecondTypeFloatingButton from "./floatingButtonComponents/SecondTypeFloatingButton";
@@ -41,6 +45,10 @@ import Pagination from "./customImageCarousel/Pagination";
 import Dot from "./customImageCarousel/Dot";
 import CustomImage from "./customImageCarousel/CustomImage";
 
+//Single Screen Components
+import AnimatedTabsButton from "./singleComponents/AnimatedTabsButton";
+
+
 
 export {
     // Drawer Components
@@ -52,6 +60,10 @@ export {
     // Bottom Tab Components
     CustomBottomTab,
     BottomTabIcon,
+
+    // Bottom Tab Components - 2
+    CustomBottomTab_2,
+    ItemList_2,
 
     // Floating Active Button Components
     FirstTypeFloatingButton,
@@ -80,9 +92,13 @@ export {
     XAxisText,
     AnimatedText,
 
-    //Custom Image Carousel Components
+    //Custom Image Carousel Components 
     CustomImageCarousal,
     Pagination,
     Dot,
     CustomImage,
+
+    //Single Screen Components
+    AnimatedTabsButton,         //Animated Tabs Screen Component
+
 };

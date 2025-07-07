@@ -98,6 +98,9 @@ To learn more about React Native, take a look at the following resources:
 
 <!-- =================================================================================== -->
 
+npx react-native start --reset-cache
+
+
 npx react-native run-android
 
 <!-- ============================= -->
@@ -111,8 +114,17 @@ npm install react-native-gesture-handler react-native-reanimated
 
 npm install @react-navigation/stack
 
+npm i react-native-vector-icons
+
 <!-- Progress Bar Chat -->
 npm install @shopify/react-native-skia
 
 <!-- Bar Chart -->
 npm i d3
+
+<!-- Animated Tabs -->
+npm i moti
+
+npm i lucide-react-native
+
+npm i react-native-svg

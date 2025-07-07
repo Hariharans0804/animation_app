@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import { HomeScreen, ProfileScreen, SearchScreen, SettingsScreen } from '../screens/bottomScreens';
+import { HomeScreen, ProfileScreen, SearchScreen, SettingsScreen } from '../screens/bottomTabScreens';
 import { CustomBottomTab } from '../components';
 
 const CustomBottomTabs = (props) => {
